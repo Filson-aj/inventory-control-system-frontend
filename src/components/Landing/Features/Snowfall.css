@@ -1,0 +1,21 @@
+@keyframes snowfall {
+    0% {
+      transform: translateY(-100vh);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+  
+.snowflake {
+    position: absolute;
+    background: rgb(235, 181, 175);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    animation: snowfall linear infinite;
+    animation-duration: 5s; /* Adjust the duration based on your preference */
+    animation-delay: calc(-5s * var(--delay));
+    animation-timing-function: linear;
+}
+  
